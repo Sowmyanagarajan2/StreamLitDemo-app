@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 #train the model
 iris = load_iris()
-model = RandomForesTClassifier().fit(iris.data,iris.target)
+model = RandomForestClassifier().fit(iris.data,iris.target)
 st.write("Iris Predictor")
 
 a = st.number_input("Sepal Length")
