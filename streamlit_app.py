@@ -1,6 +1,8 @@
 import streamlit as st
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
 
-st.title("My portfolio")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+#train the model
+iris = load_iris()
+model = RandomForesTClassifier().fit(iris.data,iris.target)
+st.write("Iris Predictor")
